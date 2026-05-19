@@ -1,0 +1,7 @@
+scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
+based policy boundary,24,2,3,1.708,0.2598,ev_0099,block release until replay is understood
+college gap,24,3,2,3.333,0.523,ev_0011,block release until replay is understood
+college reviewer handoff,24,2,4,2.583,0.4017,ev_0121,block release until replay is understood
+sells failure replay,24,2,4,3.333,0.5473,ev_0044,block release until replay is understood
+turing drift,24,2,3,2.5,0.3937,ev_0088,block release until replay is understood
+turing evidence recall,24,3,3,1.875,0.294,ev_0066,block release until replay is understood

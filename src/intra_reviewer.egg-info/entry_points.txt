@@ -1,0 +1,2 @@
+[console_scripts]
+intra-reviewer = intra_reviewer.cli:main

@@ -1,0 +1,18 @@
+{
+  "company": "Turing College",
+  "repo": "intra-reviewer",
+  "metrics": [
+    "turing_coverage",
+    "college_risk",
+    "sells_precision",
+    "based_latency"
+  ],
+  "failure_modes": [
+    "turing_drift",
+    "college_gap",
+    "sells_misroute",
+    "based_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}

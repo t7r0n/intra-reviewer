@@ -1,0 +1,82 @@
+{
+  "company": "Turing College",
+  "repo": "intra-reviewer",
+  "cases": 144,
+  "status_counts": {
+    "pass": 111,
+    "review": 19,
+    "block": 14
+  },
+  "clusters": [
+    {
+      "scenario": "based policy boundary",
+      "cases": 24,
+      "blocks": 2,
+      "reviews": 3,
+      "mean_severity": 1.708,
+      "mean_score": 0.2598,
+      "top_evidence_id": "ev_0099",
+      "recommended_action": "block release until replay is understood"
+    },
+    {
+      "scenario": "college gap",
+      "cases": 24,
+      "blocks": 3,
+      "reviews": 2,
+      "mean_severity": 3.333,
+      "mean_score": 0.523,
+      "top_evidence_id": "ev_0011",
+      "recommended_action": "block release until replay is understood"
+    },
+    {
+      "scenario": "college reviewer handoff",
+      "cases": 24,
+      "blocks": 2,
+      "reviews": 4,
+      "mean_severity": 2.583,
+      "mean_score": 0.4017,
+      "top_evidence_id": "ev_0121",
+      "recommended_action": "block release until replay is understood"
+    },
+    {
+      "scenario": "sells failure replay",
+      "cases": 24,
+      "blocks": 2,
+      "reviews": 4,
+      "mean_severity": 3.333,
+      "mean_score": 0.5473,
+      "top_evidence_id": "ev_0044",
+      "recommended_action": "block release until replay is understood"
+    },
+    {
+      "scenario": "turing drift",
+      "cases": 24,
+      "blocks": 2,
+      "reviews": 3,
+      "mean_severity": 2.5,
+      "mean_score": 0.3937,
+      "top_evidence_id": "ev_0088",
+      "recommended_action": "block release until replay is understood"
+    },
+    {
+      "scenario": "turing evidence recall",
+      "cases": 24,
+      "blocks": 3,
+      "reviews": 3,
+      "mean_severity": 1.875,
+      "mean_score": 0.294,
+      "top_evidence_id": "ev_0066",
+      "recommended_action": "block release until replay is understood"
+    }
+  ],
+  "highest_risk": {
+    "scenario": "college gap",
+    "cases": 24,
+    "blocks": 3,
+    "reviews": 2,
+    "mean_severity": 3.333,
+    "mean_score": 0.523,
+    "top_evidence_id": "ev_0011",
+    "recommended_action": "block release until replay is understood"
+  }
+}
