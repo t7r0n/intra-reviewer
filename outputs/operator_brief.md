@@ -1,6 +1,6 @@
 # Operator Brief: Turing College
 
-Turing College gets a local, deterministic pressure test around turing, college, and sells. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Turing College gets a local, deterministic pressure test around turing, college, and sells. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
