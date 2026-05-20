@@ -1,22 +1,22 @@
 # Intra Reviewer
 
-A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing - and routes the genuinely stuck cases to human mentors with the right context attached.
+A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing — and routes the genuinely stuck cases to human mentors with the right context attached.
 
 ![Intra Reviewer working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Turing College sells project based learning with 1:1 mentor reviews (AI Engineering page).
+Turing College sells project based learning with 1:1 mentor reviews (AI Engineering page). But mentor capacity is the hard ceiling on the model — they have "150+ industry mentors" and a goal of "1 on 1 tutoring accessible 24/7" (Lukas interview).
 
-Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
+The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
 ## What is inside
 
-- A deterministic replay harness tuned around turing, college, and sells.
-- Company-specific strategy code in `src/intra_reviewer/strategy.py`, not just README-level customization.
-- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
-- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
-- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+- Deterministic fixture generation for the company-specific risk surface.
+- Strategy code in `src/intra_reviewer/strategy.py` with project-specific scoring and visual evidence.
+- Citation-locked reports where every decision claim points to a generated evidence ID.
+- Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
 ![Intra Reviewer evidence map](outputs/evidence_map.svg)
 

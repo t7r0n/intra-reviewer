@@ -1,6 +1,6 @@
 # Decision Report: Intra Reviewer
 
-A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing - and routes the genuinely stuck cases to human mentors with the right context attached.
+A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing — and routes the genuinely stuck cases to human mentors with the right context attached.
 
 ## Evidence-Grounded Findings
 

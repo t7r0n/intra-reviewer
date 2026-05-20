@@ -5,8 +5,8 @@
   "package": "intra_reviewer",
   "cli": "intra-reviewer",
   "title": "Intra Reviewer",
-  "problem": "Turing College sells project based learning with 1:1 mentor reviews (AI Engineering page). But mentor capacity is the hard ceiling on the model - they have \"150+ industry mentors\" and a goal of \"1 on 1 tutoring accessible 24/7\" (Lukas interview).",
-  "direction": "A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing - and routes the genuinely stuck cases to human mentors with the right context attached.",
+  "problem": "Turing College sells project based learning with 1:1 mentor reviews (AI Engineering page). But mentor capacity is the hard ceiling on the model \u2014 they have \"150+ industry mentors\" and a goal of \"1 on 1 tutoring accessible 24/7\" (Lukas interview).",
+  "direction": "A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing \u2014 and routes the genuinely stuck cases to human mentors with the right context attached.",
   "why": "UK ESFA auditors want a paper trail; \"diff this rubric YAML between cohort 2024Q3 and 2025Q1\" is the answer. That is the kind of taste that converts a UK Boom acquisition from a cost centre into a defensible motion.",
   "terms": [
     "turing",
