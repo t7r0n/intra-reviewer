@@ -2,19 +2,39 @@
 
 A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing - and routes the genuinely stuck cases to human mentors with the right context attached.
 
-## Why This Exists
+![Intra Reviewer working dashboard](outputs/project_working.svg)
 
-Turing College sells project based learning with 1:1 mentor reviews (AI Engineering page). But mentor capacity is the hard ceiling on the model - they have "150+ industry mentors" and a goal of "1 on 1 tutoring accessible 24/7" (Lukas interview).
+## Why it exists
 
-## What It Builds
+Turing College sells project based learning with 1:1 mentor reviews (AI Engineering page).
 
-- Replays synthetic `turing` and `college` cases against the project's evidence rules.
-- Scores `turing_coverage`, `college_risk`, and `sells_precision` so regressions are visible in CSV and JSON.
-- Plants `turing drift` and `college gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `intra-reviewer` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around turing, college, and sells.
+- Company-specific strategy code in `src/intra_reviewer/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Intra Reviewer evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `turing coverage`
+- `college risk`
+- `sells precision`
+- `based latency`
+
+## Failure modes it plants
+
+- turing drift
+- college gap
+- sells misroute
+- based blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -49,4 +67,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
