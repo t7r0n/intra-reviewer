@@ -13,6 +13,28 @@
     "sells_misroute",
     "based_blindspot"
   ],
+  "domain_archetypes": [
+    {
+      "name": "turing evidence replay",
+      "trigger": "turing signal changes while college context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "college boundary probe",
+      "trigger": "college handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "sells regression harness",
+      "trigger": "sells behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "based operator packet",
+      "trigger": "based output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
   "minimum_cases": 144,
   "requires_evidence_markers": true
 }

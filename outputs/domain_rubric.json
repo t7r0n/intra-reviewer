@@ -1,0 +1,67 @@
+{
+  "repo": "intra-reviewer",
+  "company": "Turing College",
+  "rubric_axes": [
+    {
+      "axis": "turing_coverage",
+      "failures": [
+        "turing_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "college_risk",
+      "failures": [
+        "college_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "sells_precision",
+      "failures": [
+        "sells_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "based_latency",
+      "failures": [
+        "based_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "turing evidence replay",
+      "trigger": "turing signal changes while college context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "college boundary probe",
+      "trigger": "college handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "sells regression harness",
+      "trigger": "sells behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "based operator packet",
+      "trigger": "based output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://en.wikipedia.org/wiki/Turing_College_(edtech_company",
+    "https://www.turingcollege.com/ai-engineering",
+    "https://www.turingcollege.com/software-and-ai-engineering",
+    "https://www.turingcollege.com/blog/lukas-kaminskis-interview",
+    "https://www.turingcollege.com/blog/data-science-analytics-masters-degree",
+    "https://www.coursereport.com/schools/turing-college",
+    "https://www.crunchbase.com/organization/turing-college",
+    "https://moge.ai/product/turing-college",
+    "https://www.turingcollege.com/blog/ai-engineer-roadmap-how-to-become-an-ai-engineer"
+  ]
+}
