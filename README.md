@@ -1,12 +1,12 @@
 # Intra Reviewer
 
-A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing — and routes the genuinely stuck cases to human mentors with the right context attached.
+A rubric aware, project specific code & artifact reviewer that gives Intra Reviewer students Sprint 1 grade feedback within 4 minutes of pushing — and routes the genuinely stuck cases to human mentors with the right context attached.
 
 ![Intra Reviewer working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Turing College sells project based learning with 1:1 mentor reviews (AI Engineering page). But mentor capacity is the hard ceiling on the model — they have "150+ industry mentors" and a goal of "1 on 1 tutoring accessible 24/7" (Lukas interview).
+Intra Reviewer sells project based learning with 1:1 mentor reviews (AI Engineering page). But mentor capacity is the hard ceiling on the model — they have "150+ industry mentors" and a goal of "1 on 1 tutoring accessible 24/7" (Lukas interview).
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -52,18 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://en.wikipedia.org/wiki/Turing_College_(edtech_company
-- https://www.turingcollege.com/ai-engineering
-- https://www.turingcollege.com/software-and-ai-engineering
-- https://www.turingcollege.com/blog/lukas-kaminskis-interview
-- https://www.turingcollege.com/blog/data-science-analytics-masters-degree
-- https://www.coursereport.com/schools/turing-college
-- https://www.crunchbase.com/organization/turing-college
-- https://moge.ai/product/turing-college
-- https://www.turingcollege.com/blog/ai-engineer-roadmap-how-to-become-an-ai-engineer
 
 ## Boundary
 

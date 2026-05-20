@@ -1,77 +1,61 @@
 {
-  "company": "Turing College",
-  "company_slug": "turing-college",
+  "company": "Intra Reviewer",
+  "company_slug": "intra-reviewer",
   "repo": "intra-reviewer",
   "package": "intra_reviewer",
   "cli": "intra-reviewer",
   "title": "Intra Reviewer",
-  "problem": "Turing College sells project based learning with 1:1 mentor reviews (AI Engineering page). But mentor capacity is the hard ceiling on the model \u2014 they have \"150+ industry mentors\" and a goal of \"1 on 1 tutoring accessible 24/7\" (Lukas interview).",
-  "direction": "A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pushing \u2014 and routes the genuinely stuck cases to human mentors with the right context attached.",
-  "why": "UK ESFA auditors want a paper trail; \"diff this rubric YAML between cohort 2024Q3 and 2025Q1\" is the answer. That is the kind of taste that converts a UK Boom acquisition from a cost centre into a defensible motion.",
+  "problem": "Intra Reviewer sells project based learning with 1:1 mentor reviews (AI Engineering page). But mentor capacity is the hard ceiling on the model - they have \"150+ industry mentors\" and a goal of \"1 on 1 tutoring accessible 24/7\" (Lukas interview).",
+  "direction": "A rubric aware, project specific code & artifact reviewer that gives Intra Reviewer students Sprint 1 grade feedback within 4 minutes of pushing - and routes the genuinely stuck cases to human mentors with the right context attached.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "turing",
-    "college",
-    "sells",
-    "based",
-    "learning",
-    "mentor",
-    "reviews",
-    "engineering",
-    "capacity",
-    "ceiling",
-    "model",
-    "industry",
-    "mentors",
-    "tutoring",
-    "accessible",
-    "lukas",
-    "interview",
-    "rubric"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "turing_coverage",
-    "college_risk",
-    "sells_precision",
-    "based_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "turing_drift",
-    "college_gap",
-    "sells_misroute",
-    "based_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "turing evidence replay",
-      "trigger": "turing signal changes while college context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "college boundary probe",
-      "trigger": "college handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "sells regression harness",
-      "trigger": "sells behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "based operator packet",
-      "trigger": "based output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://en.wikipedia.org/wiki/Turing_College_(edtech_company",
-    "https://www.turingcollege.com/ai-engineering",
-    "https://www.turingcollege.com/software-and-ai-engineering",
-    "https://www.turingcollege.com/blog/lukas-kaminskis-interview",
-    "https://www.turingcollege.com/blog/data-science-analytics-masters-degree",
-    "https://www.coursereport.com/schools/turing-college",
-    "https://www.crunchbase.com/organization/turing-college",
-    "https://moge.ai/product/turing-college",
-    "https://www.turingcollege.com/blog/ai-engineer-roadmap-how-to-become-an-ai-engineer"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/intra-reviewer"
 }

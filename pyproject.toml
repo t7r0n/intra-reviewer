@@ -1,7 +1,7 @@
 [project]
 name = "intra-reviewer"
 version = "0.1.0"
-description = "A rubric aware, project specific code & artifact reviewer that gives Turing College students Sprint 1 grade feedback within 4 minutes of pus"
+description = "A rubric aware, project specific code & artifact reviewer that gives Intra Reviewer students Sprint 1 grade feedback wit"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
